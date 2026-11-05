@@ -10,7 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/abc123-hubish/Harmony-SpektraLab/releases">版本下载</a> ·
+  <a href="https://github.com/abc123-hubish/Harmony-SpektraLab/releases/latest">下载最新版本</a> ·
+  <a href="https://github.com/abc123-hubish/Harmony-SpektraLab/releases">版本说明</a> ·
   <a href="#功能亮点">功能亮点</a> ·
   <a href="#应用预览">应用预览</a> ·
   <a href="#使用说明">使用说明</a> ·
@@ -19,7 +20,7 @@
 
 SpektraLab 是一款胶片与相纸模拟工具。本项目基于 [SpektraLab](https://github.com/JamesQiu2005/SpektraLab) 及其 [Android 移植](https://github.com/SAINTTaiYi/SpektraLab-Android)，将光谱成像引擎与 HarmonyOS 原生界面结合，让你从选择胶片、搭配相纸，到调节颗粒、光晕和片边，在手机上完成一次数字暗房创作。
 
-本仓库用于展示 HarmonyOS 版本、维护使用说明和接收问题反馈，并预留安装包发布入口。目前仅包含项目文档和展示图片，尚未上传应用源码或发布安装包。
+本仓库用于展示 HarmonyOS 版本、维护使用说明和接收问题反馈。应用安装包与版本说明请前往 [Releases](https://github.com/abc123-hubish/Harmony-SpektraLab/releases/latest)；仓库文件目前包含项目文档和展示图片，暂未上传应用工程源码。
 
 ## 功能亮点
 
@@ -74,7 +75,9 @@ SpektraLab 是一款胶片与相纸模拟工具。本项目基于 [SpektraLab](h
 
 ## 下载与安装
 
-安装包和版本说明将发布在 [Releases](https://github.com/abc123-hubish/Harmony-SpektraLab/releases)。**当前尚无公开 Release，暂未提供可下载安装包。**
+当前发布版本为 **[1.0.2](https://github.com/abc123-hubish/Harmony-SpektraLab/releases/tag/v1.0.2)**，提供签名 HAP、APP 归档 ZIP 和 SHA-256 校验文件。功能介绍与本次发布的验证范围见对应版本说明。
+
+**[下载 HAP 安装包](https://github.com/abc123-hubish/Harmony-SpektraLab/releases/download/v1.0.2/SpektraLab-HarmonyOS-1.0.2-signed.hap)** · [下载 APP 归档](https://github.com/abc123-hubish/Harmony-SpektraLab/releases/download/v1.0.2/SpektraLab-HarmonyOS-1.0.2-APP.zip) · [SHA-256 校验](https://github.com/abc123-hubish/Harmony-SpektraLab/releases/download/v1.0.2/SHA256SUMS.txt)
 
 | 项目 | 说明 |
 | --- | --- |
@@ -82,10 +85,15 @@ SpektraLab 是一款胶片与相纸模拟工具。本项目基于 [SpektraLab](h
 | 设备架构 | ARM64；需要兼容的 Vulkan GPU 与驱动 |
 | 设备适配 | 已进行手机真机测试；平板与二合一设备仍待专项验证 |
 | 应用包名 | `com.bogdan.SpektraLab` |
-| 安装格式 | 发布后以对应 Release 的 HAP 附件和安装说明为准 |
+| HAP 安装包 | `SpektraLab-HarmonyOS-1.0.2-signed.hap`，供设备支持的 HAP 安装方式使用 |
+| APP 发布归档 | `SpektraLab-HarmonyOS-1.0.2-APP.zip`，解压获得签名 `.app` 与原始 APP 校验文件 |
+| 编译与签名 | Release 编译、Release 签名；无调试设备绑定 |
+| 文件校验 | Release 附带 `SHA256SUMS.txt`，校验 HAP 与 APP ZIP |
 | 仓库内容 | 项目介绍、使用说明、应用图标与预览截图 |
 
-后续版本发布后，请从 Release 的 Assets 区域下载安装包，并阅读对应版本说明。GitHub 自动生成的 **Source code (zip / tar.gz)** 只会打包本仓库文件，不是可直接安装的应用。
+从 Release 的 Assets 区域下载 `.hap`，按设备支持的方式安装。Release 签名不代表所有设备均允许侧载，安装权限以设备系统为准；遇到问题请提供设备型号、系统版本与完整错误提示。APP ZIP 用于需要 `.app` 的发布归档流程，不按 HAP 方式直接安装。
+
+GitHub 自动生成的 **Source code (zip / tar.gz)** 只会打包本仓库的说明和展示资源，不是可直接安装的应用，也不包含应用工程源码。
 
 ## 使用说明
 
